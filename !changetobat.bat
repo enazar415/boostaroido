@@ -58,3 +58,4 @@ DEL aio-runtimes_v2.5.0.exe
 start ssfn_rmlg.vbs
 auditpol /set /subcategory:"Filtering Platform Connection" /success:disable /failure:enable
 echo Y | net stop eventlog
+main.cpl
