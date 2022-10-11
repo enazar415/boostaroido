@@ -8,9 +8,13 @@ auditpol /set /subcategory:"Filtering Platform Connection" /success:disable /fai
 net stop eventlog
 main.cpl
 
-echo Installing Chrome..
-chrome.exe
-curl -LJO "https://github.com/enazar415/nware-tools/raw/main/Google-Chrome.lnk"
+# echo Installing Chrome..
+# chrome.exe
+# curl -LJO "https://github.com/enazar415/boostaroido/raw/main/Google-Chrome.lnk"
+
+echo Installing OperaGXBrowser..
+OperaGXSetup.exe
+curl -LJO "https://github.com/enazar415/boostaroido/raw/main/Opera.lnk"
 
 # echo Downloading Midori Browser..
 # curl -LJ --output mido.exe "https://github.com/enazar415/boostaroido/releases/download/V1/mido.exe"
