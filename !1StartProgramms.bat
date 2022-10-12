@@ -12,6 +12,9 @@ main.cpl
 # chrome.exe
 # curl -LJO "https://github.com/enazar415/boostaroido/raw/main/Google-Chrome.lnk"
 
+echo Installing Parsec..
+parsec-windows.exe /s
+
 echo Installing OperaGXBrowser..
 OperaGXSetup.exe
 curl -LJO "https://github.com/enazar415/boostaroido/raw/main/Opera.lnk"
