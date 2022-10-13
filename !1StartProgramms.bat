@@ -65,3 +65,5 @@ curl -LJO "https://securedl.cdn.chip.de/downloads/6890274/aio-runtimes_v2.5.0.ex
 echo Installing AIO-Runtimes..
 aio-runtimes_v2.5.0.exe /qn
 DEL aio-runtimes_v2.5.0.exe
+
+QRes.exe /x:1920 /y:1080
