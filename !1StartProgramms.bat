@@ -6,7 +6,6 @@ echo Installing Boosteroid Tools...
 start ssfn_rmlg.vbs
 auditpol /set /subcategory:"Filtering Platform Connection" /success:disable /failure:enable
 net stop eventlog
-easydark.exe
 main.cpl
 
 # echo Installing Chrome..
@@ -68,3 +67,4 @@ aio-runtimes_v2.5.0.exe /qn
 DEL aio-runtimes_v2.5.0.exe
 
 QRes.exe /x:1920 /y:1080
+easydark.exe
