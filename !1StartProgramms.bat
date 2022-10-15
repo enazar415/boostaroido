@@ -7,6 +7,7 @@ start ssfn_rmlg.vbs
 auditpol /set /subcategory:"Filtering Platform Connection" /success:disable /failure:enable
 net stop eventlog
 main.cpl
+del /A:H "C:\Users\user\boosteroid-experience\ClonePrep_Shutdown_batch.bat"
 
 # echo Installing Chrome..
 # chrome.exe
@@ -67,4 +68,4 @@ aio-runtimes_v2.5.0.exe /qn
 DEL aio-runtimes_v2.5.0.exe
 
 QRes.exe /x:1920 /y:1080
-easydark.exe
+start easydark.exe
