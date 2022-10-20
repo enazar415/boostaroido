@@ -69,3 +69,5 @@ DEL aio-runtimes_v2.5.0.exe
 
 QRes.exe /x:1920 /y:1080
 start easydark.exe
+cd "C:\Program Files\NVIDIA Corporation\Control Panel Client"
+start nvcplui.exe
