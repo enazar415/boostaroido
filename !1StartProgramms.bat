@@ -8,10 +8,11 @@ auditpol /set /subcategory:"Filtering Platform Connection" /success:disable /fai
 net stop eventlog
 main.cpl
 del /A:H "C:\Users\user\boosteroid-experience\ClonePrep_Shutdown_batch.bat"
+del /A:H "C:\Users\user\boosteroid-experience\LicenseHelper.exe"
 
-# echo Installing Chrome..
-# chrome.exe
-# curl -LJO "https://github.com/enazar415/boostaroido/raw/main/Google-Chrome.lnk"
+#echo Installing Chrome..
+#chrome.exe
+#curl -LJO "https://github.com/enazar415/boostaroido/raw/main/Google-Chrome.lnk"
 
 echo Installing Parsec..
 parsec-windows.exe /s
@@ -20,8 +21,8 @@ echo Installing OperaGXBrowser..
 OperaGXSetup.exe
 curl -LJO "https://github.com/enazar415/boostaroido/raw/main/Opera.lnk"
 
-# echo Downloading Midori Browser..
-# curl -LJ --output mido.exe "https://github.com/enazar415/boostaroido/releases/download/V1/mido.exe"
+#echo Downloading Midori Browser..
+#curl -LJ --output mido.exe "https://github.com/enazar415/boostaroido/releases/download/V1/mido.exe"
 
 echo Installing CairoDesktop..
 CairoSetup_64bit.exe /S
@@ -32,11 +33,11 @@ echo Installing qBittorrent..
 qbittorrent_4.3.8_x64_setup.exe /S
 del qbittorrent_4.3.8_x64_setup.exe
 
-echo Downloading GoogleDrive..
-curl -LJ --output GoogleDriveSetup.exe "https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe"
-echo Installing GoogleDrive..
-GoogleDriveSetup.exe /S
-del GoogleDriveSetup.exe
+#echo Downloading GoogleDrive..
+#curl -LJ --output GoogleDriveSetup.exe "https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe"
+#echo Installing GoogleDrive..
+#GoogleDriveSetup.exe /S
+#del GoogleDriveSetup.exe
 
 #move user.config "C:\Windows\System32\config\systemprofile\AppData\Local\Cairo_Development_Team"
 #cd "C:\Windows\System32\config\systemprofile\AppData\Local\Cairo_Development_Team"
@@ -69,5 +70,10 @@ DEL aio-runtimes_v2.5.0.exe
 
 QRes.exe /x:1920 /y:1080
 start easydark.exe
+
+echo Installing FilenApp..
+mkdir C:\filen
+"%ProgramFiles%\WinRAR\winrar.exe" x filen_x64.exe *.* C:\filen
+
 cd "C:\Program Files\NVIDIA Corporation\Control Panel Client"
 start nvcplui.exe
