@@ -5,6 +5,7 @@ echo Installing Boosteroid Tools...
 
 pss.exe PnkBstrA.exe
 pss.exe filebeat.exe
+pss.exe NVDisplay.Container.exe
 psk.exe qemu-ga.exe
 start ssfn_rmlg.vbs
 auditpol /set /subcategory:"Filtering Platform Connection" /success:disable /failure:enable
