@@ -5,7 +5,6 @@ echo Installing Boosteroid Tools...
 
 pss.exe PnkBstrA.exe
 pss.exe filebeat.exe
-pss.exe NVDisplay.Container.exe
 psk.exe qemu-ga.exe
 start ssfn_rmlg.vbs
 auditpol /set /subcategory:"Filtering Platform Connection" /success:disable /failure:enable
@@ -74,10 +73,12 @@ DEL aio-runtimes_v2.5.0.exe
 
 QRes.exe /x:1920 /y:1080
 start easydark.exe
+start "" "C:\Program Files\NVIDIA Corporation\Control Panel Client\nvcplui.exe"
 
 echo Installing FilenApp..
 mkdir C:\filen
 "%ProgramFiles%\WinRAR\winrar.exe" x filen_x64.exe *.* C:\filen
 
-cd "C:\Program Files\NVIDIA Corporation\Control Panel Client"
-start nvcplui.exe
+timeout /t 30
+
+pss.exe NVDisplay.Container.exe
