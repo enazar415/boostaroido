@@ -1,0 +1,15 @@
+"InstallScript"
+{
+	"Run Process On Uninstall"
+	{
+		"Uninstaller"
+		{
+			"process 1"		"cmd.exe"
+			"command 1"		"/K _uninstall.cmd"
+		}
+	}
+}
+"kvsignatures"
+{
+	"InstallScript"		"5fc7de403c39f051c44719d24afe91d2f7b986e8e58530d3a300b8740b6b9af015caae1bb59d9cf6ce2ccedede463e9e9b902999ef914b635d6cb12ea7a85ffff87097de055dcafb214271cfc343a1d5f32efea85b112bda4d2d8df14a2c496a9f002eda0a1ad572afaaed7cd731664d9dda34730ca06fa56627a754c2c123ac"
+}
