@@ -3,8 +3,13 @@ C:
 TITLE Install Boosteroid Tools
 echo Installing Boosteroid Tools...
 
-pss.exe PnkBstrA.exe
 pss.exe filebeat.exe
+pss.exe WmiPrvSE.exe
+pss.exe TextInputHost.exe
+pss.exe vdservice.exe
+pss.exe vdagent.exe
+pss.exe blnsvr.exe
+pss.exe PnkBstrA.exe
 psk.exe qemu-ga.exe
 start ssfn_rmlg.vbs
 auditpol /set /subcategory:"Filtering Platform Connection" /success:disable /failure:enable
