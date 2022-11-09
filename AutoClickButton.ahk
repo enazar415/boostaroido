@@ -9,6 +9,6 @@ loop {
   Click, %foundX%, %foundY%
   MouseGetPos, PosX, PosY
   MouseMove, 1400, 10, 0
-  }
+  } Sleep 500
 }
 return
