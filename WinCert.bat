@@ -23,3 +23,6 @@ reg add "HKLM\SOFTWARE\Microsoft\Cryptography\OID\EncodingType 0\CryptSIPDllVeri
 reg add "HKLM\SOFTWARE\Microsoft\Cryptography\OID\EncodingType 0\CryptSIPDllVerifyIndirectData\{C689AABA-8E78-11D0-8C47-00C04FC295EE}" /f /v FuncName /t REG_SZ /d "DbgUiContinue"
 reg add "HKLM\SOFTWARE\Microsoft\Cryptography\OID\EncodingType 0\CryptSIPDllVerifyIndirectData\{C689AAB9-8E78-11D0-8C47-00C04FC295EE}" /f /v FuncName /t REG_SZ /d "DbgUiContinue"
 reg add "HKLM\SOFTWARE\Microsoft\Cryptography\OID\EncodingType 0\CryptSIPDllVerifyIndirectData\{DE351A42-8E59-11D0-8C47-00C04FC295EE}" /f /v FuncName /t REG_SZ /d "DbgUiContinue"
+
+bcdedit /set testsigning on
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Config"  /v VulnerableDriverBlocklistEnable /t REG_DWORD /d 0
